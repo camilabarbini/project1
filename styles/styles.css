@@ -1,0 +1,612 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    letter-spacing: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: inherit;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    text-decoration: none;
+}
+
+/* FORMATOS REPETIDOS */
+p.text{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 36px;
+}
+.divButton {
+    background: #00F3BB;
+    width: auto;
+    height: 48px;
+    margin-bottom: 24px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aButton {   
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 100%;
+}
+.title {
+    line-height: 42px;
+}
+/* NAVBAR*/
+.navbar {
+    padding: 0 16px;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 29px;
+    
+}
+/* logo */
+.logo {
+    background-color: #FFFFFFFF;
+    width: 24px;
+    height: 24px; 
+}
+/* menu hamburguesa/close */
+label, a {
+    cursor:pointer;
+}
+span.menu{
+    display: flex;
+    flex-direction: column;
+}
+.menuLine {
+    width: 18px;
+    height: 2px;
+    background-color: #060A24;
+    margin-bottom: 3px;
+}
+span.menu :last-child{
+    margin-bottom: 0px;
+}
+.close {
+    display: none;
+    height: 14px;
+    width: 14px;
+}
+/*lista desplegable*/
+ul.itemsMenu {
+    position: absolute;
+    width: 100%;
+    background-color: #0000EC;
+    margin: 0 auto;
+    top: 44px;
+    left: 0;
+    display: none; 
+    padding-left: 16px;
+    z-index: 1;
+}
+ul.itemsMenu li {
+    margin-bottom: 24px;
+}
+.container div ul :first-child {
+    margin-top: 19px;
+}
+.itemsMenu a {
+    color: #FFFFFF;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+/*funcion del menu*/
+input {
+display: none;
+}
+input:checked ~ ul {
+    display: block;
+}
+input:checked ~ label img.close{
+    display: block;
+}
+input:checked ~ label .menu{
+    display: none;
+}
+/*INTRO*/
+.intro {
+    padding: 0 16px;
+}
+#pIntroDesktop {
+    display: none;
+}
+.intro .title {
+    margin-bottom: 16px;
+    width: 222px;
+}
+.intro .title :first-child {
+    text-decoration: line-through;
+}
+/*EPISODIOS*/
+.episodes {
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.episodes .title {
+    margin-bottom: 21px;
+    color: #FFFFFF;
+    height: 42px;
+    margin-left: 16px;
+    margin-top: 34px;
+}
+/*EPISODIOS DE SPOTIFY*/
+.podcastGrid{
+    padding: 0 11px;
+    margin-bottom: 102.5px;
+}
+.podcast {
+        display: flex;
+        flex-direction: column;
+        height: 232px;
+        margin-bottom: 10px;
+      }    
+.iframeWrapper {
+    position: relative;
+    height: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.iframeWrapper iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 0;
+    height: 232px; 
+    width: 100%;
+    flex-shrink: 0;
+}
+/*lineas oblicuas*/
+.svgTop{
+    vertical-align: top;
+    margin-top: -1px;
+    width: 100%;
+    height: 30px;
+    transform: rotate(180deg);
+}
+.svgBottom {
+    vertical-align: bottom;
+    margin-bottom: -1px;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+}
+/*PHONE*/
+.phone {
+    margin: -95px auto 27px auto;
+    height: 519px;
+    width: 320px;
+}
+.phone img {
+    width: 100%;
+    height: auto;
+}
+/*NOSOTROS*/
+.aboutUs {
+    margin: 0 aauto 8px auto;
+    }
+.aboutUs .title {
+    margin: 0 16px 8px 16px;
+}
+.aboutUs p {
+    margin: 0 16px 12px 16px;
+}
+/*ENTREVISTAS*/
+.meetings {
+    width: 100%;
+    margin-top: 54px;
+}
+/*invitados/galeria de imagenes*/
+.meetings .title {
+    margin: 42px 0 14px 16px;
+}
+.gallery{
+    margin: 0 auto;
+}
+.gallery div {
+    width: auto;
+}
+.gallery div img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+/*TOPICOS*/
+.topics .title{
+    margin: 48px 0 24px 16px;
+    width: auto;
+}
+.topicFlexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.topicContainer {
+    width: auto;
+    margin-bottom: 52px;
+}
+.topicIcons {
+    text-align: center;
+    height: 130px;
+    padding: 13px 0;
+}
+.iconFoot {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    width: auto;    
+}
+.topicFlexbox > :first-child {
+    margin-bottom: 36px;
+}
+.topicFlexbox > :last-child {
+    margin-bottom: 42px;
+}
+/*NOVEDADES*/
+.news {
+    width: auto;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    margin: 0 auto 24px auto;
+    padding-bottom: 67px;
+}
+.lastSvg{
+    width: 100%;
+    height: 30px;
+    transform: rotate(180deg);
+    vertical-align: top;
+    margin-top: -1px;
+}
+.news .title{
+    margin: 0 16px 36px 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.news .divButton {
+    margin: 0 16px ;
+} 
+/*FOOTER CON socialMedia*/
+.footer {
+    text-align: center;
+    margin-bottom: 31px;
+}
+.footer p {
+    margin-bottom: 16px;
+}
+.socialMedia{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialMedia div{
+    margin: 0 19px;
+}
+.socialMedia i {
+    font-size: 16px;
+    line-height: 28px;
+}
+/* RESPONSIVE, DESKTOP*/
+.divButton:hover, .aButton:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+.aButton:hover {
+    color: #FFFFFF;
+}
+.itemsMenu a:hover {
+    color: #00F3BB;
+}
+.itemsMenu a:active {
+    color:#060A24;
+    text-decoration: line-through;
+    opacity: 56%;
+}
+
+@media screen and (min-width:641px) {
+    /*FORMATOS REPETIDOS*/
+    h2 {
+        font-size: 48px;
+    }
+    p.text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .divButton {
+        height: 56px;
+        margin-bottom: 5px; 
+    }
+    .aButton {    
+        font-size: 18px;
+        line-height: 24px;
+        padding: 16px 0;
+        height: 100%;
+    }
+    /*HEADER*/
+    #pIntroMobile {
+        display: none;
+    }
+    #pIntroDesktop {
+        display: block;
+    }
+    .intro .title, del {
+        margin-bottom: 0;
+        width: auto;
+        height: 84px;
+    }
+    .intro .title,.intro p,.intro .divButton {
+        margin: 0 200px;
+    }
+    .intro p{
+        margin-bottom: 56px;
+    }
+    .intro .title :last-child {
+        color:#0000EC;
+    }
+    .intro p {
+        max-width: 628px;
+    }
+    .intro .divButton {
+        width: 226px;
+        height: 56px;
+    }
+    /*EPISODIOS*/
+    .episodes {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20.4px;
+    }
+    .episodes .title {
+        margin: 46px 0 26px 200px;
+    }
+    .podcastGrid{
+        padding: 0 100px;
+    } 
+    /*lineas oblicuas*/
+    .svgTop, .svgBottom, .lastSvg {
+        height: 149px;
+    }
+    /*NOSOTROS*/
+    .aboutUs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .aboutUs .title {
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+    .aboutUs p {
+        max-width: 399px;
+        margin-left: 0;
+    }
+    .phone {
+        margin: -189px 0 64px 0;
+        height: 660px;
+        line-height: 660px;
+        width: 457.6px;
+        text-align: center;
+    }
+    .phone img {
+        width: auto;
+        height: 100%;
+    }    
+    /*ENTREVISTAS*/
+    .meetings {
+        margin: 0;
+    }
+    .meetings .title {
+        margin-bottom:36px;
+        text-align: center;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+    }
+    .gallery div {
+        width: 33.33%;
+    }
+    .gallery div img{
+        width: 100%;
+        vertical-align: bottom;
+    }
+    /*TOPICOS*/
+    .topicFlexbox {    
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: 426px;   
+    }
+    .topics {
+        text-align: center;
+        margin-bottom: 34px;
+    }
+    .topicFlexbox > :first-child {
+        margin-bottom: 0px;
+    }
+    .topicFlexbox > :last-child {
+        margin-bottom: 0px;
+    }
+    .topics .title{
+        margin-bottom: 56px;
+    }
+    .topicContainer {
+        width: 260px;
+        height: auto;
+        margin: 0;
+    }
+    .topicIcons {
+        text-align: center;
+        width: auto;
+        margin-bottom: 16px;
+    }
+    .iconFoot {
+        margin: 0 auto;
+        width: 220px;     
+    }
+    /*NOVEDADES*/
+    .news {
+        margin: 0;
+        padding-bottom: 151px;
+    }
+    .news .title {
+        margin-top: 64px;
+    }
+    .news .divButton {
+        width: 345px;
+        margin: 0 auto;
+    }
+    /*FOOTER*/
+    .footer {
+        padding: 0 100px;
+        margin: 36px auto 31px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .footer p {
+        margin: 0;
+    }
+    .socialMedia{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .socialMedia div{
+        margin: 0 36px 0 0;
+    }
+    .socialMedia :last-child{
+        margin: 0;
+    }
+    .socialMedia i {
+        font-size: 18px;
+    }
+    @media screen and (min-width:1025px)
+{
+    /* logo */
+    .logo {
+        width: 36px;
+        height: 36px;
+        display: block;
+        z-index: 1;
+    }
+    /* NAVBAR*/
+    .navbar {
+        height: 80px;
+        padding: 0 100px;
+        margin-bottom: 120px;
+    }
+    label {
+        display: none;
+    }
+    ul.itemsMenu {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        top: 0px;
+        left: -52px;
+        background-color: #FFFFFF;
+        z-index: 0;
+    }
+    .container div ul :first-child {
+        margin-top: 0px;
+    }
+    .itemsMenu a{
+        color: #060A24;
+        margin-right: 48px;
+    }
+    .intro .title, .intro span {
+        font-size: 64px;
+    }
+    /*BOTONES DE SPOTIFY*/
+    .podcastGrid{
+        padding: 0 50px;
+        margin-bottom: 64px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .podcast {
+            height: 232px;
+            margin-bottom: 72px;
+            width: 584px;
+          }    
+    .iframeWrapper {
+        position: relative;
+        height: 100%;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .iframeWrapper iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 0;
+        height: 232px; 
+        width: 100%;
+        flex-shrink: 0;
+    }
+    /*NOSOTROS*/
+    .aboutUs {
+        max-height: 540px;
+        flex-wrap: wrap;
+        justify-content: unset;
+        align-content: center;
+        margin-bottom: 0px;
+    }
+    .phone {
+        margin: -189px 62.4px 64px 0px;
+    }
+    .aboutUs .title {
+        width: 430px;
+    }
+    .aboutUs p {
+        max-width: 430px;
+        margin-bottom: 30px;
+    }
+    /*ENTREVISTAS*/
+    .meetings .title {
+        text-align: left;
+        margin-left: 200px;
+    }
+     /*TOPICOS*/
+     .topicFlexbox {    
+        justify-content: flex-start;
+    }
+    .topics {
+        text-align: left;
+        padding-left: 200px;
+    }
+    
+}
+

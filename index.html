@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BR PODCAST CHANNEL</title>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b06f65270a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!--NAVBAR-->
+    <header>
+      <div class="navbar">
+        <img src="/images/logo.svg" alt="Logo BR" class="logo">
+        <input type="checkbox" id="checkboxNav">
+        <ul class="itemsMenu" style="list-style-type:none;">
+          <li><a href="#episodes" target="_self">episodios</a></li>
+          <li><a href="#aboutUs" target="_self">nosotros</a></li>
+          <li><a href="#meetings" target="_self">entrevistas</a></li>
+          <li><a href="#topics" target="_self">tópicos</a></li>
+        </ul>
+        <label for="checkboxNav">
+          <span class="menu">
+            <img src="images/line.png" alt="linea menu hamburguesa" class="menuLine">
+            <img src="images/line.png" alt="linea menu hamburguesa" class="menuLine">
+            <img src="images/line.png" alt="linea menu hamburguesa" class="menuLine">
+          </span>
+          <img src="images/close.png" alt="icono cerrar" class="close">
+        </label>
+      </div>
+    </header>
+    <!--HEADER-->
+    <section class="intro">
+      <h1 class="title">
+        Hello <span>world</span> pale blue dot<span>.</span>
+      </h1>
+      <p class="text" id="pIntroMobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los
+        jueves cada 15
+        días.</p>
+      <p class="text" id="pIntroDesktop">El portal de podcasts que explora el mundo de la programación y la tecnología.
+        Nuevos episodios, todos los jueves cada 15 días.</p>
+        <div class="divButton"><a href="#aboutUs" class="aButton">conocé más</a></div>
+    </section>
+    <!--EPISODIOS-->
+    <section id="episodes" class="episodes">
+      <svg class="svgTop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="white" points="0,100 100,0 100,100" />
+      </svg>
+      <h2 class="title">Episodios</h2>
+      <div class="podcastGrid">
+        <div class="podcast">
+          <div class="iframeWrapper">
+            <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"></iframe>
+          </div>
+        </div>
+        <div class="podcast">
+          <div class="iframeWrapper">
+            <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"></iframe>
+          </div>
+        </div>
+        <div class="podcast">
+          <div class="iframeWrapper">
+            <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"></iframe>
+          </div>
+        </div>
+        <div class="podcast">
+          <div class="iframeWrapper">
+            <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"></iframe>
+          </div>
+        </div>
+      </div>
+      <svg class="svgBottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <polygon fill="white" points="0,100 100,0 100,100" />
+      </svg>
+    </section>
+    <!--NOSOTROS-->
+    <section id="aboutUs" class="aboutUs">
+      <div class="phone"><img src="images/phone.png" alt="telefono"></div>
+      <h2 class="title">De dónde venimos</h2>
+      <div>
+        <p class="text">Our posturings, our imagined self-importance, the delusion that we have some privileged position
+          in the
+          Universe, are challenged by this point of pale light. 
+        </p>
+        <p class="text"> 
+          Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+          vastness,
+          there is no hint that help will come from elsewhere to save us from ourselves.
+        </p>
+      </div>
+    </section>
+    <!--ENTREVISTAS-->
+    <section id="meetings" class="meetings">
+      <h2 class="title">Invitadas/os estelares</h2>
+      <div class="gallery">
+        <div><img src="images/grace-hopper.png" alt="Grace Hopper"></div>
+        <div><img src="images/Katie-Bouman.png" alt="Kati Bouman"></div>
+        <div><img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton"></div>
+        <div><img src="images/computer_50s.png" alt="computadora en los años cincuenta">
+        </div>
+        <div><img src="images/computer_operators.png" alt="operadores de computadora"></div>
+        <div><img src="images/susan-kare.png" alt="Susan Kare"></div>
+      </div>
+    </section>
+    <!--TOPICOS-->
+    <section id="topics" class="topics">
+      <h2 class="title">Algunos de nuestros temas</h2>
+      <div class="topicFlexbox">
+        <div class="topicContainer">
+          <div class="topicIcons"><img src="/images/icon1.svg" alt="trabajo remoto"></div>
+          <div class="iconFoot">Trabajo remoto</div>
+        </div>
+        <div class="topicContainer">
+          <div class="topicIcons"><img src="/images/icon2.svg" alt="cerebro"></div>
+          <div class="iconFoot">Repensando la programación</div>
+        </div>
+        <div class="topicContainer">
+          <div class="topicIcons"><img src="/images/icon3.svg" alt="laptop"></div>
+          <div class="iconFoot">Bases del código</div>
+        </div>
+        <div class="topicContainer">
+          <div class="topicIcons"><img src="/images/icon4.svg" alt="seguridad informática"></div>
+          <div class="iconFoot">Seguridad informática</div>
+        </div>
+      </div>
+      
+    </section>
+    <!--ULTIMAS NOVEDADES-->
+    <section id="news" class="news">
+      <div>
+        <svg class="lastSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon fill="white" points="0,100 100,0 100,100" />
+        </svg>
+      </div>
+      <h2 class="title">¿Querés las últimas novedades?</h2>
+      <div class="divButton"><a href="#episodes" class="aButton">escuchá los episodios
+</a></div>
+    </section>
+    <!--FOOTER CON socialMedia-->
+    <footer id="footer" class="footer">
+      <div>
+        <p class="text">© 2019— Hello blue pale dot</p>
+      </div>
+      <div class="socialMedia">
+        <div>
+          <a href="http://www.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+        </div>
+        <div>
+          <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div>
+          <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div>
+          <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div>
+          <a href="https://web.telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
